@@ -3,7 +3,6 @@
   using System;
   using System.ComponentModel;
   using System.Linq.Expressions;
-  using System.Windows;
   using System.Windows.Input;
 
   public class MoqExampleViewModel: INotifyPropertyChanged
