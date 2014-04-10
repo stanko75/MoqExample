@@ -16,10 +16,10 @@
     public MoqExampleViewModel()
     {
       MyTextBox = "This text is from ctor";
-      MyShowMessageClick = new RelayCommand(MyShowMessage);
+      UpdateTextBoxClick = new RelayCommand(UpdateTextBox);
     }
 
-    public ICommand MyShowMessageClick
+    public ICommand UpdateTextBoxClick
     {
       get
       {
@@ -31,7 +31,7 @@
       }
     }
 
-    private void MyShowMessage(object obj)
+    private void UpdateTextBox(object obj)
     {
       MyTextBox = "This text is from button click";
       OnPropertyChanged(() => this.MyTextBox);

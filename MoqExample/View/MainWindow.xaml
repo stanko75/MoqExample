@@ -15,6 +15,6 @@
             <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
         <TextBox DataContext="{StaticResource MoqExampleViewModel}" Grid.Row="0" Grid.Column="0" TextWrapping="Wrap" Text="{Binding MyTextBox}" AcceptsReturn="True"  HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Visible"/>
-        <Button DataContext="{StaticResource MoqExampleViewModel}" Grid.Row="1" Content="Write to memo" Height="30" VerticalAlignment="Bottom" Command="{Binding MyShowMessageClick}"></Button>
+        <Button DataContext="{StaticResource MoqExampleViewModel}" Grid.Row="1" Content="Write to memo" Height="30" VerticalAlignment="Bottom" Command="{Binding UpdateTextBoxClick}"></Button>
     </Grid>
 </Window>
