@@ -30,7 +30,7 @@
       }
     }
 
-    private void UpdateTextBox(object obj)
+    public void UpdateTextBox(object obj)
     {
       MyTextBox = "This text is from button click";
       OnPropertyChanged(() => this.MyTextBox);

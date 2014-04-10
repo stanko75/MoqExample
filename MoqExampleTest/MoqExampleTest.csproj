@@ -53,6 +53,12 @@
     <Compile Include="MoqExampleUnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoqExample\MoqExample.csproj">
+      <Project>{cb64b21d-34db-45ea-a5f7-d25a7c251f2b}</Project>
+      <Name>MoqExample</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
