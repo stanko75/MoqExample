@@ -3,6 +3,7 @@
   using System;
   using System.ComponentModel;
   using System.Linq.Expressions;
+  using System.Windows;
   using System.Windows.Input;
 
   public class MoqExampleViewModel: INotifyPropertyChanged
@@ -16,9 +17,27 @@
     {
       MyTextBox = "This text is from ctor";
       UpdateTextBoxClick = new RelayCommand(UpdateTextBox);
+      CalculateClick = new RelayCommand(Calculate);
+    }
+
+    private void Calculate(object obj)
+    {
+      MessageBox.Show("test");
     }
 
     public ICommand UpdateTextBoxClick
+    {
+      get
+      {
+        return _buttonCommand;
+      }
+      set
+      {
+        _buttonCommand = value;
+      }
+    }
+
+    public ICommand CalculateClick
     {
       get
       {
